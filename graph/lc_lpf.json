@@ -1,0 +1,1 @@
+{"nodes": [{"id": "Vin", "inst_type": "Voltage Source", "ports": ["1", "0"], "value": 1, "edge_weight": [1, 1]}, {"id": "L1", "inst_type": "Inductor", "ports": ["1", "2"], "value": 1, "edge_weight": [1, 1]}, {"id": "C1", "inst_type": "Capacitor", "ports": ["2", "0"], "value": 1, "edge_weight": [1, 1]}]}

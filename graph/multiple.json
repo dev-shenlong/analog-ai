@@ -1,0 +1,95 @@
+{
+  "nodes": [
+    {
+      "id": "V1",
+      "inst_type": "Voltage Source",
+      "ports": [
+        1,
+        0
+      ],
+      "value": 1,
+      "edge_weight": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "V2",
+      "inst_type": "Voltage Source",
+      "ports": [
+        3,
+        0
+      ],
+      "value": 1,
+      "edge_weight": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "R1",
+      "inst_type": "Resistor",
+      "ports": [
+        1,
+        2
+      ],
+      "value": 1,
+      "edge_weight": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "R2",
+      "inst_type": "Resistor",
+      "ports": [
+        2,
+        3
+      ],
+      "value": 1,
+      "edge_weight": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "R3",
+      "inst_type": "Resistor",
+      "ports": [
+        2,
+        0
+      ],
+      "value": 1,
+      "edge_weight": [
+        1,
+        1
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "V1",
+      "R1"
+    ],
+    [
+      "V1",
+      "R3"
+    ],
+    [
+      "V2",
+      "R2"
+    ],
+    [
+      "V2",
+      "R3"
+    ],
+    [
+      "R1",
+      "R3"
+    ],
+    [
+      "R2",
+      "R3"
+    ]
+  ]
+}

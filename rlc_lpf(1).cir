@@ -1,0 +1,8 @@
+* Title: RLC LPF
+
+* Netlist
+Vin 1 0 dc 0 ac 1
+R1 1 2 2k
+L1 2 3 100m
+C1 3 0 10n
+.end

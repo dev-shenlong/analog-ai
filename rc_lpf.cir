@@ -1,0 +1,7 @@
+* Title: Passive RC LPF
+
+* Netlist
+Vin 1 0 dc 0 ac 1
+R1 1 2 10k
+C1 2 0 1.591n
+.end

@@ -1,0 +1,82 @@
+{
+  "nodes": [
+    {
+      "id": "Vin",
+      "inst_type": "Voltage Source",
+      "ports": [
+        1,
+        0
+      ],
+      "value": 1,
+      "edge_weight": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "R1",
+      "inst_type": "Resistor",
+      "ports": [
+        1,
+        0
+      ],
+      "value": 1,
+      "edge_weight": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "R2",
+      "inst_type": "Resistor",
+      "ports": [
+        1,
+        0
+      ],
+      "value": 1,
+      "edge_weight": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "R3",
+      "inst_type": "Resistor",
+      "ports": [
+        1,
+        0
+      ],
+      "value": 1,
+      "edge_weight": [
+        1,
+        1
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "Vin",
+      "R3"
+    ],
+    [
+      "Vin",
+      "R3"
+    ],
+    [
+      "R1",
+      "R3"
+    ],
+    [
+      "R1",
+      "R3"
+    ],
+    [
+      "R2",
+      "R3"
+    ],
+    [
+      "R2",
+      "R3"
+    ]
+  ]
+}

@@ -1,0 +1,7 @@
+* Title: LC LPF
+
+* Netlist
+Vin 1 0 dc 0 ac 1
+L1 1 2 100m
+C1 2 0 1.5n
+.end

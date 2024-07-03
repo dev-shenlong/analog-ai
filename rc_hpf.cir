@@ -1,0 +1,7 @@
+* Title: Passive RC HPF
+
+* Netlist:
+Vin 1 0 dc 0 ac 1
+C1 1 2 100m
+R1 2 0 10k
+.end
