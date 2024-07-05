@@ -71,10 +71,13 @@ class Parser:
                 'edge_weight': weight
 
             })
-
+        self.getWireConnections()
+        #print(self.connections)
 
         #print(self.graph)
         self.graph['edges'] = []
+        for element in self.connections:
+            self.graph['edges'].append(element)
         
 
         filename = (self.directory.split('/')[-1]).split('.')[0]
@@ -87,6 +90,24 @@ class Parser:
             if i not in list2:
                 return False
         return True
+    def getWireConnections(self):
+        connections = []
+        self.connections = []
+        for i in self.edges:
+            val = self.edges[i]
+            for j in val:
+                values = []
+                for k in self.edges:
+                    if(j in self.edges[k]):
+                        values.append(k)
+                if(values not in connections):
+                    connections.append(values)
+        for i in connections:
+            for com in i:
+                for com2 in i:
+                    if(com != com2):
+                        if([com,com2] not in self.connections and [com2,com] not in self.connections):
+                            self.connections.append([com,com2])
 
 
 if __name__ == '__main__':
